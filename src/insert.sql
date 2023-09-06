@@ -1,4 +1,4 @@
 \c cadastros;
 
-INSERT INTO tabela VALUES (1,'teste@gmail.com');
-INSERT INTO tabela VALUES (2,'joao@gmail.com');
+INSERT INTO tabela VALUES (DEFAULT,'teste@gmail.com');
+INSERT INTO tabela VALUES (DEFAULT,'joao@gmail.com');
