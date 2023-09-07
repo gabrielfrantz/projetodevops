@@ -12,7 +12,7 @@
 
 # Monitoramento com a ferramenta Grafana
 
-![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/430968fa-ab5d-4f24-9cff-fbde34e7c9ee)
+![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/e355ac41-3539-42f6-afca-e0722fa5aa5f)
 
 # Estrutura do Docker-compose
 
