@@ -1,29 +1,18 @@
-version: "3.7"
 networks: #networks
-  rede: #nome da rede
+  redenova: #nome da rede
     driver: bridge #tipo de rede
 
 services: #containers
-  pythonapp: #container 2
-    image: galladas/pythonapp:v1 #nome da imagem
-    container_name: pythonapp #nome do container
-    ports: #porta de acesso
-      - 8080:8080 #porta pc:container
-    networks: #network conectada
-      - rede #nome da network conectada
-    depends_on: #requerimento de outro container para ele ser criado
-      - postgresdb #nome do container requerido
-    
-  postgresdb: #container 1
-    image: galladas/postgresdb:v1 #nome da imagem
+  postgres: #container
+    image: postgres #nome da imagem
     container_name: postgresdb #nome do container
     volumes: #volume do container
       - ./create.sql:/docker-entrypoint-initdb.d/create.sql #realiza a criação do usuário docker, do database e da tabela
       - ./insert.sql:/docker-entrypoint-initdb.d/insert.sql #realiza a inserção de dois registros na tabela recém criada
     ports: #porta de acesso
-      - 5432:5432 #porta pc:container
+      - 5000:5432 #porta pc:container
     networks: #network conectada
-      - rede #nome da network conectada
+      - redenova #nome da network conectada
     environment: #variabel de ambiente
       POSTGRES_USER: postgres #usuario do banco
       POSTGRES_PASSWORD: postgres #senha do banco

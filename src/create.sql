@@ -1,8 +1,8 @@
-CREATE DATABASE cadastros;
+CREATE database cadastros;
 
 \c cadastros;
 
 CREATE TABLE "tabela" (
-    "id" serial PRIMARY KEY,
-    "email" VARCHAR(200) UNIQUE NOT NULL
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(200) UNIQUE NOT NULL
 );
