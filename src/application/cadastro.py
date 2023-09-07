@@ -8,11 +8,12 @@ def menu(): #menu mostrado para o usuário realizar uma ação
     opcao=input("Bem-vindo!\nEscolha uma opção:\n1-Cadastrar e-mail\n2-Listar e-mails cadastrados\n3-Sair\n")
     return int(opcao)
 
-def conectadb(): #conexao com o banco de dados postgresql
+def conectadb(): #conexao com o banco de dados postgres
     conexao = psycopg2.connect(host="localhost",
                                database="cadastros",
                                user="postgres",
-                               password="postgres")
+                               password="postgres",
+                               port=5000)
     return conexao
 
 def sqlCadastro(email): #sql para cadastro
