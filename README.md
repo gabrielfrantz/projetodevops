@@ -1,21 +1,24 @@
-# API desenvolvida em Python e Flask, na qual se comunica com um banco de dados PostgreSQL, ambos em containers separados
-# Cada container possui seu Dockerfile específico, e ambos os arquivos são criados através de um Docker-compose.yaml
+# Aplicação local desenvolvida em Python, com banco de dados PostgreSQL em um container docker e com monitoramento da ferramenta Grafana, também hospedada em um container docker, ambos criados através de um arquivo Docker-compose.yaml.
 
-# Teste de rota da API no container, através de um GET e seu Dockerfile
+# Aplicação
 
-![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/79ed05cf-8525-4c9c-b378-423eef33237d)
+![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/9cf7fbf9-ba88-4d27-b025-728970d455fe)
 
-![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/7ee997e7-2309-4a5e-9b0c-3c1a284f371c)
+# Banco de Dados PostgreSQL
 
-# Banco de Dados PostgreSQL no container e seu Dockerfile
+![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/385ed3fd-8895-4c71-9e91-7045b77f1832)
 
-![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/f5136a5e-29cd-4f59-9b1b-92a50728189a)
+# Monitoramento com a ferramenta Grafana
 
-![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/362d2cce-3f30-4912-ab13-e826cdb3cc3c)
+![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/e355ac41-3539-42f6-afca-e0722fa5aa5f)
 
 # Estrutura do Docker-compose
 
-![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/e65ec5e6-16de-4691-84cc-1ac9a832d1ac)
+![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/74d512f8-3c28-4aaf-b403-ff03fdb2b327)
+
+# Estrutura da pasta da aplicação e dos arquivos de banco de dados de pré criação de tabelas e população de dados
+
+![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/35a9838b-6767-4eb9-98b3-8a298413b686)
 
 # Ambos estão rodando na mesma rede, em modo Bridge, para poderem se comunicar entre si.
 
