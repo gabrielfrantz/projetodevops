@@ -18,3 +18,4 @@
 ![image](https://github.com/gabrielfrantz/projetodevops/assets/33354703/e65ec5e6-16de-4691-84cc-1ac9a832d1ac)
 
 # Ambos estão rodando na mesma rede, em modo Bridge, para poderem se comunicar entre si.
+
